@@ -1,0 +1,445 @@
+
+/*Reset CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Common CSS*/
+
+.full {
+	width: 100%;
+}
+
+.fix {overflow: hidden;}
+
+.floatleft {float: left;}
+
+.floatright {float: right;}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+    width: 1170px;
+    height: 200px;
+}
+
+.social-icon {
+	margin: 15px 80px 5px auto;
+}
+.icon {
+	padding: 15px 15px 5px;
+}
+
+.title-bar {
+    width: 1170px;
+    height: 60px;
+    background-color: #2c2929;
+    border-radius: 10px;
+}
+
+.site-name {
+    color: #999999;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 15px 15px 15px 0px;
+    font-size: 30px;
+    font-family: arial;
+}
+
+.drop {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 20px 10px;
+    background-color: #000000;
+    font-family: arial;
+}
+
+.search-bar {
+    margin: 15px;
+}
+
+.search-input {
+    width: 255px;
+    height: 24px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.search-btn {
+    background-color: #5cb85c;
+    padding: 7px 10px;
+    border-radius: 0px 3px 3px 0px;
+    color: #FFFFFF;
+}
+
+.log-reg {
+    padding: 20px; 
+}
+
+.log-reg ul {
+    list-style: none;
+}
+
+.log-reg ul li {
+    float: left;    
+    color: #999999;
+    font-family: arial;
+}
+
+.log-reg ul li:nth-child(2) {
+    padding: 0px 10px;
+}
+
+.log-reg ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #999999;
+}
+
+.log-reg ul li a:hover {
+    color: #DDDDDD;
+}
+
+.appname-type {
+    margin-top: 25px;
+}
+
+.app-name {
+    color: #3ca4f4;
+    font-size: 40px;
+    font-family: arial;
+}
+
+.app-type {
+    margin-top: 8px;
+}
+
+.app-type ul {
+    list-style: none;
+}
+
+.app-type ul li {
+    float: left;    
+    color: #3ca4f4;
+    border-right: 2px solid #999999;
+}
+
+.app-type ul li:last-child {
+    border-right: none;
+}
+
+
+.app-type ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #3ca4f4;
+    padding: 5px; 
+}
+
+.app-type ul li a:hover {
+    color: #333333;
+}
+
+.app-details {
+    height: 160px;
+    width: 300px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.name {
+    width: 62px;
+    height: 15px;
+    background-color: #7fbcf0;
+    line-height: 0px;
+    border: none;
+    border-radius: 3px;
+}
+
+.arrows {
+    width: 22px;
+    height: 15px;
+    background-color: #7fbcf0;
+    line-height: 0px;
+    border-radius: 3px;
+    padding: 0px 3px;
+}
+
+.publisher, .developer, .idea-by {
+    margin-bottom: 10px;
+}
+
+.release-date .date {
+    color: #7fbcf0;
+    font-weight: bold;
+    font-family: arial;
+    border-bottom: 1px solid #7fbcf0;
+}
+
+.google-play-website {
+    height: 42px;
+    width: 270px;
+    margin-top: 15px;
+}
+
+.google-play {
+    width: 170px;
+    height: 42px;
+    background-color: #21c10c;
+}
+
+.g-play {
+    padding: 12px 35px;
+}
+
+.website {
+    height: 42px;
+    width: 90px;
+    background-color: #428bca;
+    margin-left: 10px;
+}
+
+.site {
+    padding: 12px 20px;
+}
+
+.app-categories {
+    width: 270px;
+    margin-right: 30px;
+    height: 1060px;    
+    font-family: arial;
+}
+
+.f-apps {
+    font-size: 24px;
+    padding-top: 5px;
+}
+
+.app-preview {
+    width: 270px;
+    height: 152px;
+    border-bottom: 3px solid #ff0000;
+    background-color: #aaa;
+    margin-top: 10px;
+}
+
+.f-app-rating {
+    margin-top: -15px;
+}
+
+.s-apps {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.load-more {
+    width: 170px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.load {
+    width: 170px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 2px solid #999999;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pro-pre {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.promo {
+    padding: 0px 10px;
+    border-bottom: 3px solid #ff0000;
+}
+
+.preview {
+    padding: 0px 10px;
+    border-bottom: 3px solid #f1caca;
+    color: #7a7777;
+}
+
+.slider {
+    width: 870px;
+    height: 430px;
+    background-color: #636363;
+    border-bottom: 3px solid #ff0000;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.rating-view {
+    width: 870px;
+    height: 75px;
+}
+
+.rating-point {
+    width: 75px;
+    height: 75px;
+    font-weight: bold;
+    font-size: 24px;
+    background-image: url('images/rating-star.png');
+    background-repeat: no-repeat;
+}
+
+.point {
+    line-height: 75px;
+    margin: 22px;
+}
+
+.your-rating {
+    width: 270px;
+    height: 75px;
+    font-family: serif;
+    color: #646161;
+}
+
+.all-starts span {
+    padding: 1px 0px;
+    
+}
+
+.rat {
+    font-weight: bold;
+}
+
+.users {
+    color: #1d7ec9;
+}
+
+.total-views {
+    font-size: 28px;
+    line-height: 75px;
+}
+
+.share-write {
+    margin-bottom: 20px;
+}
+
+.share-review {
+    width: 870px;
+    margin: 10px 0px;
+}
+
+.write-review {
+    border-bottom: 2px solid #ff0000;
+}
+
+.app-desc {
+    width: 870px;
+    font-size: 17px;
+}
+
+.all-reviews {
+    width: 870px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.review {
+    width: 868px;
+    height: 145px;
+    border: 1px solid #dedede;
+    margin: 20px 0px 10px;
+}
+
+.title-content {
+    width: 768px;
+    height: 145px;
+}
+
+.review-content {
+    margin-top: 5px;
+}
+
+.review-rating-like {
+    width: 100px;
+    height: 145px;
+}
+
+.review-rating {
+    width: 75px;
+    height: 75px;
+    font-weight: bold;
+    font-size: 24px;
+    background-image: url('images/rating-star.png');
+    background-repeat: no-repeat;
+    padding: 8px;
+}
+
+.point1 {
+    line-height: 60px;
+    margin: 15px;
+}
+
+.like-btn, .unlike-btn {
+    padding: 10px;
+}
+
+.load-more2 {
+    width: 170px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

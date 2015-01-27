@@ -1,62 +1,321 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>This is Title | Assignment-2</title>
+		
+        <title>Assignment - 4</title>
+        
         <!--Bootstrap CSS-->
-		<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />-->
-
-		<!--Bootstrap theme-->
-		<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css" />-->
-
-		<!--Bootstrap js-->
-		<!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>-->
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+        
+        <!--Font Awesome-->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         
         <!--Custom CSS-->
-        <link href="styles/style.css" rel="stylesheet" type="text/css" />
-        
+        <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
+    
     <body>
-        <div class="container">
-            <section class="header">
-                    <nav class="navbar">
-                        <ul class="nav-ul">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Software</a></li>
-                            <li><a href="#">Contacts</a></li>
-                        </ul>
-                    </nav>
-                    
-                    <div class="headerbox">
-                        <div class="box-btn">
-                                <button type="button" class="">Button1</button>
-                                <button type="button" class="">Button2</button>
-                                <button type="button" class="">Button3</button>
+        <div class="full fix">
+            <div class="container fix">
+                <div class="header fix">
+                    <div class="social-icon fix floatright">
+                        <div class="icon fix icon-facebook"></div>
+                        <div class="icon fix icon-twitter"></div>
+                        <div class="icon fix icon-google-plus"></div>
+                    </div>
+                    <div class="title-bar fix">
+                        <div class="site-name fix floatleft">
+                            Website Name
                         </div>
-                    </div>                
-            </section>
-            
-            <section class="content">
-                <div class="left-col floatleft">
+                        <div class="drop fix floatleft">
+                            Drop
+                        </div>
+                        <div class="search-bar fix floatleft">
+                            <form class="floatleft" role="search">
+                                <!--<div class="col-lg-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search for..." />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">Go</button>
+                                      </span>
+                                    </div>
+                                </div>-->                         
+                            </form>
+                            
+                            <input type="text" class="search-input floatleft" name="" />
+                            <div class="icon-search search-btn floatleft"></div>
+                        </div>
+                        <div class="log-reg fix floatright">
+                            <ul>
+                                <li><a href="#">Login</a></li>
+                                <li>|</li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <div class="appname-type fix">
+                        <div class="app-name fix">
+                            App Name
+                        </div>
+                        <div class="app-type fix">
+                            <ul>
+                                <li><a href="#">Type1</a></li>
+                                <li><a href="#">Type2</a></li>
+                                <li><a href="#">Type3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar fix floatleft">
+                    <div class="app-details fix">
+                        <div class="publisher fix">
+                            Publisher : 
+                            <button class="name">Name1</button>
+                            <button class="name">Name2</button>
+                            <button class="name">Name3</button>
+                            <i class="icon-double-angle-right arrows"></i>
+                        </div>
+                        <div class="developer fix">
+                            Developer : 
+                            <button class="name">Name1</button>
+                            <button class="name">Name2</button>
+                            <button class="name">Name3</button>
+                            <i class="icon-double-angle-right arrows"></i>
+                        </div>
+                        <div class="idea-by fix">
+                            Idea by : 
+                            <button class="name">Name1</button>
+                            <button class="name">Name2</button>
+                            <button class="name">Name3</button>
+                            <i class="icon-double-angle-right arrows"></i>
+                        </div>
+                        <div class="release-date fix">
+                            Release Date : <span class="date">1-Sep-2013</span>
+                        </div>
+                        <div class="google-play-website">
+                            <div class="google-play fix floatleft">
+                                <div class="g-play">
+                                    <i class="icon-play-sign"></i>Google Play
+                                </div>
+                            </div>
+                            <div class="website fix floatleft">
+                                <div class="site">
+                                    Website
+                                </div>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="app-categories fix floatleft">
+                        <div class="featured-apps fix">
+                            <h1 class="f-apps">Featured Apps</h1>
+                            <div class="first-app fix">
+                                <div class="app-preview fix">
+                                    
+                                </div>
+                                <div class="f-app-info fix">
+                                    <div class="f-app-name fix">
+                                        AppName
+                                    </div>
+                                    <div class="f-app-rating fix floatright">
+                                        <span class="f-app-rate">7.8</span>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-android"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-app fix">
+                                <div class="app-preview fix">
+                                    
+                                </div>
+                                <div class="f-app-info fix">
+                                    <div class="f-app-name fix">
+                                        AppName
+                                    </div>
+                                    <div class="f-app-rating fix floatright">
+                                        <span class="f-app-rate">7.8</span>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-windows"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="third-app fix">
+                                <div class="app-preview fix">
+                                    
+                                </div>
+                                <div class="f-app-info fix">
+                                    <div class="f-app-name fix">
+                                        AppName
+                                    </div>
+                                    <div class="f-app-rating fix floatright">
+                                        <span class="f-app-rate">7.8</span>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-apple"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="suggested-apps fix">
+                            <h1 class="s-apps">Suggested Apps</h1>
+                            <div class="first-app fix">
+                                <div class="app-preview fix">
+                                    
+                                </div>
+                                <div class="f-app-info fix">
+                                    <div class="f-app-name fix">
+                                        AppName
+                                    </div>
+                                    <div class="f-app-rating fix floatright">
+                                        <span class="f-app-rate">7.8</span>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-android"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-app fix">
+                                <div class="app-preview fix">
+                                    
+                                </div>
+                                <div class="f-app-info fix">
+                                    <div class="f-app-name fix">
+                                        AppName
+                                    </div>
+                                    <div class="f-app-rating fix floatright">
+                                        <span class="f-app-rate">7.8</span>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-android"></i>
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                        <div class="load-more fix">
+                            <button class="load fix">Load More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-pre fix floatleft">
+                    <div class="promo fix floatleft">Promo</div>
+                    <div class="preview fix floatleft">Preview</div>
+                </div>
+                <div class="slider fix floatleft">
                     
                 </div>
-                
-                <div class="right-col floatleft">
+                <div class="content fix floatleft">
+                    <div class="rating-view fix">
+                        <div class="app-rating fix floatleft">
+                            <div class="rating-point fix floatleft">
+                                <span class="point">7.2</span>
+                            </div>
+                            <div class="your-rating fix floatleft">
+                                <div class="fix">Your Rating</div>
+                                <div class="all-starts fix">
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span class="icon-star-empty"></span>
+                                    <span>-/10</span>                            
+                                </div>
+                                <div><span class="rat">7.2</span> rating from <span class="users">200000 users</span></div>
+                                <div>Review from 3 users | 4 critic</div>
+                            </div>                  
+                        </div>
+                        <div class="views fix floatright">
+                            <span class="total-views">93,123,412</span>
+                        </div>
+                    </div>
+                    <div class="share-review fix floatleft">
+                        <div class="share-write fix">
+                            <div class="share floatleft fix">
+                                <span class="icon-share">Share</span>
+                                <span class="icon-flag">Report |</span>
+                                <span>Posted by Username | </span>
+                                <span>1-Nov-2014</span>
+                            </div>
+                            <div class="write-review fix floatright">
+                                Write Review
+                            </div>
+                        </div>
+                                
+                    </div>
                     
-                </div>
-            </section>
-            
-            <section class="footer">
-                <div class="left-footer floatleft">
+                    <div class="app-desc fix">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book <a href="#">....show more</a>
+                            </p>
+                    </div> 
                     
-                </div>
-                
-                <div class="right-footer floatleft">
-                    
-                </div>
-            </section>
+                    <div class="all-reviews fix">                                 
+                        <div class="review fix">
+                            <div class="title-content fix floatleft">
+                                <h2 class="fix">Title of the review</h2>
+                                <div class="review-content fix">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book<a href="#">....show more</a>
+                                </div>
+                            </div>
+                            <div class="review-rating-like fix floatright">
+                                <div class="review-rating fix floatright">
+                                    <span class="point1">7.2</span>
+                                </div>
+                                <div class="like-btn icon-2x icon-thumbs-up-alt fix floatleft">
+                                
+                                </div>
+                                <div class="unlike-btn icon-2x icon-thumbs-down-alt fix floatleft">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review fix">
+                            <div class="title-content fix floatleft">
+                                <h2 class="fix">Title of the review</h2>
+                                <div class="review-content fix">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book<a href="#">....show more</a>
+                                </div>
+                            </div>
+                            <div class="review-rating-like fix floatright">
+                                <div class="review-rating fix floatright">
+                                    <span class="point1">7.2</span>
+                                </div>
+                                <div class="like-btn icon-2x icon-thumbs-up-alt fix floatleft">
+                                
+                                </div>
+                                <div class="unlike-btn icon-2x icon-thumbs-down-alt fix floatleft">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review fix">
+                            <div class="title-content fix floatleft">
+                                <h2 class="fix">Title of the review</h2>
+                                <div class="review-content fix">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book<a href="#">....show more</a>
+                                </div>
+                            </div>
+                            <div class="review-rating-like fix floatright">
+                                <div class="review-rating fix floatright">
+                                    <span class="point1">7.2</span>
+                                </div>
+                                <div class="like-btn icon-2x icon-thumbs-up-alt fix floatleft">
+                                
+                                </div>
+                                <div class="unlike-btn icon-2x icon-thumbs-down-alt fix floatleft">
+                                    
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="load-more2 fix">
+                        <button class="load fix">Load More</button>
+                    </div>
+                </div>       
+            </div>
         </div>
     </body>
 </html>
