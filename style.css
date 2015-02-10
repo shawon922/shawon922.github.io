@@ -190,6 +190,7 @@ table {
 
 .load-more {
     margin-top: 15px;
+    margin-bottom: 35px;
 }
 
 .load {
@@ -201,7 +202,7 @@ table {
 }
 
 .pro-pre {
-    margin-top: 15px;
+    margin-top: -15px;
     font-weight: bold;
 }
 
@@ -297,18 +298,18 @@ table {
     width: 100%;
     font-size: 17px;
     margin-top: 20px;
+    padding: 0;
 }
 
 .review {
-    width: 868px;
-    height: 145px;
+    width: 100%;
     border: 1px solid #dedede;
-    margin: 20px 0px 10px;
+    margin: 20px 0px 10px;    
+    padding: 0;
 }
 
 .title-content {
-    width: 768px;
-    height: 145px;
+    padding-left: 0px;
 }
 
 .title-content h2 {
@@ -323,10 +324,13 @@ table {
 }
 
 .review-rating-like {
-    
+    padding: 0;
 }
 
 .review-rating {
+    
+    width: 75px;
+    height: 75px;
     font-weight: bold;
     font-size: 24px;
     background-image: url('images/rating-star.png');
@@ -334,19 +338,22 @@ table {
 }
 
 .point1 {
+    line-height: 80px;
+    padding-left: 20px;
+    width: 67px;
+    height: 67px;
 }
 
 .like-btn, .unlike-btn {
-    
+    padding: 1px;
 }
 
 .load-more2 {
-    width: 170px;
-    height: 40px;
     margin: 0 auto;
     background-color: #FFFFFF;
     border: 1px solid #999999;
     cursor: pointer;
     font-weight: bold;
+    width: 105px;
 }
 
