@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Assignment - 4</title>
         
         <!--Bootstrap CSS-->
-        <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         
         <!--Font Awesome-->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -15,97 +15,106 @@
     </head>
     
     <body>
-        <div class="full fix">
-            <div class="container fix">
-                <div class="header fix">
-                    <div class="social-icon fix floatright">
+        <div class="full">
+            <div class="container">
+                <div class="row">
+                    <div class="social-icon col-md-offset-10 col-sm-offset-9 col-xs-offset-4">
                         <div class="icon fix icon-facebook"></div>
                         <div class="icon fix icon-twitter"></div>
                         <div class="icon fix icon-google-plus"></div>
                     </div>
-                    <div class="title-bar fix">
-                        <div class="site-name fix floatleft">
-                            Website Name
-                        </div>
-                        <div class="drop fix floatleft">
-                            Drop
-                        </div>
-                        <div class="search-bar fix floatleft">
-                            <form class="floatleft" role="search">
-                                <!--<div class="col-lg-6">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search for..." />
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button">Go</button>
-                                      </span>
-                                    </div>
-                                </div>-->                         
-                            </form>
-                            
-                            <input type="text" class="search-input floatleft" name="" />
-                            <div class="icon-search search-btn floatleft"></div>
-                        </div>
-                        <div class="log-reg fix floatright">
-                            <ul>
-                                <li><a href="#">Login</a></li>
-                                <li>|</li>
-                                <li><a href="#">Register</a></li>
-                            </ul>
-                        </div>                        
-                    </div>
-                    <div class="appname-type fix">
-                        <div class="app-name fix">
-                            App Name
-                        </div>
-                        <div class="app-type fix">
-                            <ul>
-                                <li><a href="#">Type1</a></li>
-                                <li><a href="#">Type2</a></li>
-                                <li><a href="#">Type3</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-                <div class="sidebar fix floatleft">
-                    <div class="app-details fix">
-                        <div class="publisher fix">
+                <div class="row">
+                    <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="#">Website Name</a>
+                        </div>
+                    
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav">
+                            
+                            <li class="active dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-success"><i class="icon-search"></i></button>
+                          </form>
+                          <ul class="nav navbar-nav navbar-right log-reg">
+                            <li><a href="#">Log In</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="#">Register</a></li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                    </nav>
+                </div><!--End of Titlebar row-->
+                
+                <div class="row"> <!--AppName row start-->
+                    <div class="appname">
+                        <h1 class="h1">App Name</h1>
+                        <ul class="app-type">
+                            <li><a href="#">Type1</a></li>
+                            <li><a href="#">Type2</a></li>
+                            <li><a href="#">Type3</a></li>
+                        </ul>
+                    </div>
+                </div> <!--AppName row ends-->
+                
+                <div class="row appname-slider"> <!--Appdetails row start-->
+                    <div class="col-md-3 app-details">
+                        <div class="publisher">
                             Publisher : 
-                            <button class="name">Name1</button>
-                            <button class="name">Name2</button>
-                            <button class="name">Name3</button>
-                            <i class="icon-double-angle-right arrows"></i>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="arrows-btn btn btn-success"><i class="icon-double-angle-right arrows"></i></button>                            
                         </div>
-                        <div class="developer fix">
+                        <div class="developer">
                             Developer : 
-                            <button class="name">Name1</button>
-                            <button class="name">Name2</button>
-                            <button class="name">Name3</button>
-                            <i class="icon-double-angle-right arrows"></i>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="arrows-btn btn btn-success"><i class="icon-double-angle-right arrows"></i></button>                            
                         </div>
-                        <div class="idea-by fix">
+                        <div class="idea-by">
                             Idea by : 
-                            <button class="name">Name1</button>
-                            <button class="name">Name2</button>
-                            <button class="name">Name3</button>
-                            <i class="icon-double-angle-right arrows"></i>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="name btn btn-success">Name1</button>
+                            <button type="submit" class="arrows-btn btn btn-success"><i class="icon-double-angle-right arrows"></i></button>
                         </div>
-                        <div class="release-date fix">
+                        <div class="release-date">
                             Release Date : <span class="date">1-Sep-2013</span>
                         </div>
-                        <div class="google-play-website">
-                            <div class="google-play fix floatleft">
-                                <div class="g-play">
-                                    <i class="icon-play-sign"></i>Google Play
-                                </div>
-                            </div>
-                            <div class="website fix floatleft">
-                                <div class="site">
-                                    Website
-                                </div>                                
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="app-categories fix floatleft">
+                        
+                        <button type="submit" class="g-play-btn btn btn-success"><i class="icon-play-sign"></i>Google Play</button>
+                        <button type="submit" class="site-btn btn btn-success">Website</button>
+                      
+                    
+                    
+                    <div class="app-categories">
                         <div class="featured-apps fix">
                             <h1 class="f-apps">Featured Apps</h1>
                             <div class="first-app fix">
@@ -113,7 +122,7 @@
                                     
                                 </div>
                                 <div class="f-app-info fix">
-                                    <div class="f-app-name fix">
+                                    <div class="f-app-name floatleft fix">
                                         AppName
                                     </div>
                                     <div class="f-app-rating fix floatright">
@@ -128,7 +137,7 @@
                                     
                                 </div>
                                 <div class="f-app-info fix">
-                                    <div class="f-app-name fix">
+                                    <div class="f-app-name floatleft fix">
                                         AppName
                                     </div>
                                     <div class="f-app-rating fix floatright">
@@ -144,7 +153,7 @@
                                     
                                 </div>
                                 <div class="f-app-info fix">
-                                    <div class="f-app-name fix">
+                                    <div class="f-app-name fix floatleft">
                                         AppName
                                     </div>
                                     <div class="f-app-rating fix floatright">
@@ -162,7 +171,7 @@
                                     
                                 </div>
                                 <div class="f-app-info fix">
-                                    <div class="f-app-name fix">
+                                    <div class="f-app-name floatleft fix">
                                         AppName
                                     </div>
                                     <div class="f-app-rating fix floatright">
@@ -177,7 +186,7 @@
                                     
                                 </div>
                                 <div class="f-app-info fix">
-                                    <div class="f-app-name fix">
+                                    <div class="f-app-name floatleft fix">
                                         AppName
                                     </div>
                                     <div class="f-app-rating fix floatright">
@@ -189,18 +198,23 @@
                             </div>           
                         </div>
                         <div class="load-more fix">
-                            <button class="load fix">Load More</button>
+                            <button class="btn btn-primary load fix">Load More</button>
                         </div>
                     </div>
                 </div>
-                <div class="pro-pre fix floatleft">
+                    
+                <div class="pro-pre col-md-9">
                     <div class="promo fix floatleft">Promo</div>
                     <div class="preview fix floatleft">Preview</div>
                 </div>
-                <div class="slider fix floatleft">
-                    <h1>Yourtube Video</h1>
+                <div class="col-md-9">
+                    <div class="slider">
+                        <h1>Yourtube Video</h1>
+                    </div>   
                 </div>
-                <div class="content fix floatleft">
+                
+                
+                <div class="content col-md-9">
                     <div class="rating-view fix">
                         <div class="app-rating fix floatleft">
                             <div class="rating-point fix floatleft">
@@ -314,8 +328,18 @@
                     <div class="load-more2 fix">
                         <button class="load fix">Load More</button>
                     </div>
-                </div>       
-            </div>
-        </div>
+                </div>                      
+                </div> <!--Appdetails row ends-->
+                
+                
+            </div> <!--End of Container-->
+        </div> <!--End of Full-->
+        
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="bootstrap/js/jquery-1.11.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
