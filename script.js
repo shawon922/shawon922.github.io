@@ -5,6 +5,7 @@ let existingCall = null;
 
 navigator.mediaDevices.getUserMedia({video: true, audio: true})
   .then(function (stream) {
+    $("#my-video").srcObject = stream;
     console.log("User media stream: ", stream);
   })
   .catch(function (err) {
